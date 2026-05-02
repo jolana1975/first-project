@@ -1,0 +1,34 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+body {
+      height: 100vh;
+    }
+
+.mn-container {
+      display: flex;
+      height: 100%;
+    }
+
+.blackhalf {
+      flex: 1;
+      background-color: black;
+    }
+
+.whitehalf {
+      flex: 1;
+      background-color: white;
+    }
+
+.whitespan {
+  color:black;
+  font-size:5rem;
+}
+
+.blackspan {
+  color:white;
+  font-size:5rem;
+}
