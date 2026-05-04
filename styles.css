@@ -6,29 +6,104 @@
 
 body {
       height: 100vh;
+      font-family: "Jersey 25", sans-serif;
     }
 
+ 
+
+    
 .mn-container {
       display: flex;
       height: 100%;
+      position:relative;
     }
 
 .blackhalf {
       flex: 1;
       background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      min-width: 0;
+      
     }
 
 .whitehalf {
       flex: 1;
       background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      min-width: 0;
+
     }
 
-.whitespan {
-  color:black;
-  font-size:5rem;
+
+
+.blacksays, .whitesays {
+  visibility: hidden;
+  width: 100%;
+  padding: 2rem;
+  word-wrap: break-word;
+  text-align: center;
 }
 
-.blackspan {
+.blacksays {
   color:white;
-  font-size:5rem;
+  font-size:3.5rem;
+  
 }
+
+.whitesays {
+  color:black;
+  font-size:3.5rem;
+  
+}
+
+
+.start-btn {
+  font-family: "Jersey 25", sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to right, white 50%, black 50%);
+  border: none;
+  font-size: 5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: opacity 0.8s ease;
+  color: transparent;
+  border-radius: 4px;
+  
+}
+
+.start-btn::before {
+  content: 'Start';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background: white;
+  clip-path: inset(0 50% 0 0 round 8px 0 0 8px);
+  
+}
+
+.start-btn::after {
+  content: 'Start';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: black;
+  clip-path: inset(0 0 0 50% round 0 8px 8px 0);
+
+}
+
+
